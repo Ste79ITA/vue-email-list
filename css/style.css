@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+il,
+menu {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+
+.mails {
+  background-color: cornflowerblue;
+  padding: 20px;
+  line-height: 2em;
+  border: 5px solid palevioletred;
+  border-radius: 10px;
+  color: white;
+}
+
+.title {
+  color: cornflowerblue;
+  text-align: center;
+  padding-bottom: 20px;
+}

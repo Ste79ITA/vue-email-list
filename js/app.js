@@ -1,13 +1,10 @@
 const { createApp } = Vue;
-// const axios = require('axios');
 
 createApp({
   data() {
     return {
       mails: [],
       api: 'https://flynn.boolean.careers/exercises/api/random/mail',
-      message: 'vue-email-list',
-      mail: '',
     };
   },
   methods: {
@@ -21,6 +18,5 @@ createApp({
   },
   created() {
     this.createArray();
-    console.log(this.mails);
   },
 }).mount('#app');

@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vue-email-list</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div id="app">
-      <ul v-show="mails.length > 8">
+      <h1 class="title">Email List</h1>
+      <ul class="mails" v-show="mails.length == 10">
         <li v-for="mail in mails">{{ mail }}</li>
       </ul>
     </div>
