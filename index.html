@@ -10,8 +10,11 @@
     <div id="app">
       <h1 class="title">Email List</h1>
       <div class="card">
-        <ul class="mails" :class="{'visible': mails.length == 10}">
-          <li v-for="mail in mails">{{ mail }}</li>
+        <ul>
+          <template v-if="mails.length == 10">
+            <li v-for="mail in mails">{{ mail }}</li>
+          </template>
+          <div class="wait" v-else>Loading mail addresses</div>
         </ul>
       </div>
     </div>
